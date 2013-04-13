@@ -4,11 +4,13 @@ import com.example.uf_happy_hour.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -50,6 +52,7 @@ public class LoadScreenActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_load_screen);
+        //setTitle("Happy Hours on Wednesday, 3/20/13");
 
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);
@@ -101,7 +104,7 @@ public class LoadScreenActivity extends Activity {
             @Override
             public void onClick(View view) {
                 if (TOGGLE_ON_CLICK) {
-                    mSystemUiHider.toggle();
+                    mSystemUiHider.toggle();                  
                 } else {
                     mSystemUiHider.show();
                 }
@@ -112,6 +115,18 @@ public class LoadScreenActivity extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        
+        //*
+        ///Added on Click listener to test bottom bar button functionality
+        final Button registerButton = (Button) findViewById(R.id.dummy_button);
+        registerButton.setOnClickListener(new View.OnClickListener() {
+          public void onClick(View view) {
+            Intent intent = new Intent();
+            intent.setClass(LoadScreenActivity.this, MainActivity.class);        
+            startActivity(intent);
+          }
+        });
+        //*/
     }
 
     @Override

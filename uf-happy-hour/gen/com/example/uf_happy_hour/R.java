@@ -22,20 +22,40 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int black_overlay=0x7f040000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int beer1=0x7f020000;
+        public static final int beer2=0x7f020001;
+        public static final int bjj=0x7f020002;
+        public static final int dasda=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int icon=0x7f020005;
+        public static final int icon2=0x7f020006;
+        public static final int office_building=0x7f020007;
+        public static final int salts=0x7f020008;
     }
     public static final class id {
+        public static final int ListViewId=0x7f070003;
+        public static final int buildingIcon=0x7f070004;
         public static final int dummy_button=0x7f070002;
         public static final int fullscreen_content=0x7f070000;
         public static final int fullscreen_content_controls=0x7f070001;
+        public static final int header_layout_root=0x7f070007;
+        public static final int hh_time=0x7f070006;
+        public static final int testText=0x7f070005;
     }
     public static final class layout {
         public static final int activity_load_screen=0x7f030000;
+        public static final int main_base=0x7f030001;
+        public static final int main_cell_info=0x7f030002;
+        public static final int main_header=0x7f030003;
+        public static final int main_text_view=0x7f030004;
+        public static final int profile_base=0x7f030005;
+        public static final int splash_screen=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int dummy_button=0x7f050002;
         public static final int dummy_content=0x7f050001;
+        public static final int test_header=0x7f050003;
     }
     public static final class style {
         /** 
